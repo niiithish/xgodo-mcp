@@ -1,0 +1,26 @@
+{
+  "name": "xgodo-mcp",
+  "version": "1.0.0",
+  "description": "MCP server running on localhost",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "bun --hot src/index.ts",
+    "start": "bun build/index.js",
+    "scrape": "bun src/scripts/scrape.ts"
+  },
+  "keywords": ["mcp", "server"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.3",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.1.0",
+    "typescript": "^5.9.3",
+    "@types/bun": "latest"
+  },
+  "private": true
+}
